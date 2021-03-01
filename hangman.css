@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+:root{
+    --gradient: linear-gradient(
+    45deg,    
+    #8A2387,
+    #E94057,
+    #F27121
+    );
+    
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: gradient-animation 30s infinite alternate;
+    color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@keyframes gradient-animation{
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+@keyframes button-animation{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    75%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+span {
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    font-size: 3.2rem;
+    height: 3.2rem;
+    line-height: 2.4rem;
+    margin: 0 .25rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 2.5rem;
+}
+
+#hangman-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hangman-word {
+    display: flex;
+    margin-bottom: 4.8rem;
+}
+
+#hangman{
+    display: flex;
+}
+
+#guesses-count{
+    margin-bottom: 2.8rem;
+}
+
+#guessed-letters{
+    margin-bottom: 1.8rem;
+}
+
+.button {
+    outline: none;
+    background: #4361ee;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0.8rem 2.6rem;
+    box-shadow: inset 0 0 0 0 #8ac926;
+    transition: ease-out 200ms;
+}
+
+
+.button:hover {
+    box-shadow: inset 110px 0 0 0 #8ac926;
+}
+
+.buttonClicked {
+    animation: button-animation 300ms alternate;
+    animation-iteration-count: 1;
+}
+
+
+p {
+    font-weight: 300;
+    margin-bottom: .8rem;
+}
