@@ -73,4 +73,5 @@ class Hangman {
     }
     this.calculateStatus()
   }
+
 }
