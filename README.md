@@ -9,7 +9,9 @@ build a hangman game that displays random sentences to users.
 
 ## About
 Built in: 
-  - React: 17.0.1
+  - Javascript: ES6
+  - HTML: 5
+  - Css: 3
 
 Rest Api request:
   - puzzle.mead.io/puzzle
