@@ -5,7 +5,7 @@ the classic hangman game where you have to guess the sentence before you lose al
 build a hangman game that displays random sentences to users.
 
  ## available at
- https://secretfolders.netlify.app
+ https://krbhangman.netlify.app
 
 ## About
 Built in: 
