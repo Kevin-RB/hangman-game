@@ -7,12 +7,11 @@ const guessedLettersElement = document.querySelector('#guessed-letters')
 
 let hangmanNewGame
 
-window.addEventListener('keypress', (e) => {
+window.addEventListener('keydown', (e) => {
   const guess = e.key
   hangmanNewGame.makeGuess(guess)
   render()
 })
-
 
 const render = () => {
   hangmanElement.innerHTML = ''
@@ -32,10 +31,10 @@ const startGame = async () => {
   render()
 }
 const resetBtn = document.querySelector('#reset')
-resetBtn.addEventListener('click', ()=>{ 
+resetBtn.addEventListener('click', () => {
   resetBtn.classList.add('buttonClicked')
   startGame()
-  setTimeout(()=>{resetBtn.classList.remove('buttonClicked')},300)
+  setTimeout(() => { resetBtn.classList.remove('buttonClicked') }, 300)
 })
 
 startGame()
