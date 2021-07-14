@@ -12,6 +12,18 @@ Built in:
   - Javascript: ES6
   - HTML: 5
   - Css: 3
+ 
+  Dependencies:
+
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "live-server": "^1.2.1",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
 
 Rest Api request:
   - puzzle.mead.io/puzzle
