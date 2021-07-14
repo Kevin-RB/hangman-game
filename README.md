@@ -9,9 +9,7 @@ build a hangman game that displays random sentences to users.
 
 ## About
 Built in: 
-  - Javascript: ES6
-  - HTML: 5
-  - Css: 3
+ - This application was built using JavaScript, Babel and Webpack.
  
   Dependencies:
 
