@@ -4,7 +4,7 @@ the classic hangman game where you have to guess the sentence before you lose al
 ## Goal
 build a hangman game that displays random sentences to users.
 
- ## available at
+ ## Available at
  https://krbhangman.netlify.app
 
 ## About
